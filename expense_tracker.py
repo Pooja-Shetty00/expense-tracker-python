@@ -12,7 +12,8 @@ while True:
     print("2. View Expenses")
     print("3. Total Expenses")
     print("4. Delete Expense")
-    print("5. Exit")
+    print("5. Category Summary")
+    print("6. Exit")
     choice = input("Enter your choice: ")
     
     if choice == '1':
@@ -55,9 +56,22 @@ while True:
 
             print("Expense deleted successfully!")
         else:
-            print("Invalid expense number.")  
+            print("Invalid expense number.") 
 
     elif choice == '5':
+        summary = {}
+
+        for amount, category in expenses:
+            if category in summary:
+                summary[category] += amount
+            else:
+                summary[category] = amount
+
+        print("\nExpense Summary:")
+        for category, total in summary.items():
+            print(f"{category}: ${total:.2f}")
+
+    elif choice == '6':
         print("Exiting the expense tracker. Goodbye!")
         break
         
