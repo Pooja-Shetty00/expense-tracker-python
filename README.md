@@ -8,6 +8,8 @@ A simple Python application for tracking daily expenses.
 * View expenses
 * Calculate total expenses
 * Exit application
+* Save expenses to a text file
+* Load saved expenses automatically
 
 ## Technologies Used
 

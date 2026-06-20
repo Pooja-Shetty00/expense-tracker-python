@@ -1,4 +1,12 @@
-expenses=[]
+expenses = []
+
+try:
+    with open("expenses.txt", "r") as file:
+        for line in file:
+            amount, category = line.strip().split(",")
+            expenses.append((float(amount), category))
+except FileNotFoundError:
+    pass
 while True:
     print("1. Add Expense")
     print("2. View Expenses")
@@ -9,7 +17,12 @@ while True:
     if choice == '1':
         amount = float(input("Enter expense amount: "))
         category = input("Enter expense category: ")
+
         expenses.append((amount, category))
+
+        with open("expenses.txt", "a") as file:
+            file.write(f"{amount},{category}\n")
+
         print("Expense added successfully!")
         
     elif choice == '2':
