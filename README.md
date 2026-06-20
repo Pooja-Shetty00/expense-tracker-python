@@ -30,6 +30,10 @@ python3 expense_tracker.py
 * Graphical User Interface (GUI)
 * CSV Export
 
+## Project Screenshot
+
+![Expense Tracker Screenshot](screenshot.png)
+
 ## Author
 
 Pooja Shetty
