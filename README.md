@@ -4,14 +4,22 @@ A simple Python application for tracking daily expenses.
 
 ## Features
 
-- Add expenses
-- View expenses
-- Calculate total expenses
-- Exit application
+* Add expenses
+* View expenses
+* Calculate total expenses
+* Exit application
 
 ## Technologies Used
 
-- Python
+* Python
+
+## How to Run
+
+1. Clone the repository
+2. Open the project folder
+3. Run:
+
+python3 expense_tracker.py
 
 ## Author
 
