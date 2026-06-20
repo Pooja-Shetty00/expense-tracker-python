@@ -2,3 +2,6 @@
 100.0,Travel
 500.0,Shopping
 300.0,Food
+323.0,medicine
+231.0,Gas
+250.0,Electricity
